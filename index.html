@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SIT725 Practice 3</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <nav>
+        <div class="nav-wrapper navbar-size">
+            <a href="#" class="brand-logo">
+                <img class="userImageSize" src="userimage.jpg" alt="User Image">
+            </a>
+            <ul id="nav-links" class="center-align right hide-on-med-and-down">
+                <li><a target="_blank" href="https://www.linkedin.com">LinkedIn</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="mainContainer">
+        <div class="firstContainer center-align">
+            <div class="row center-align">
+                <div class="col s12">
+                    <h1 id="welcome-heading">Welcome to Week 3</h1>
+                    <p class="flow-text">Practice-3 Bootstrapping Express App</p>
+                </div>
+                <div class="col s12">
+                    <img class="materialboxed materialboxed-image" src="livedemo.png" alt="Live Demo Image">
+                </div>
+                <div class="col s12">
+                    <a class="waves-effect waves-light btn click-me-button modal-trigger" data-target="form-modal"
+                        id="click-me-btn">
+                        <i class="material-icons left">auto_fix_high</i>Click Me
+                    </a>
+                </div>
+            </div>
+            <div class="row center-align" id="card-section">
+                <div class="col s4">
+                    <div class="card">
+                        <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="animal1.avif" alt="Animal Image">
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator darkslategrey-text text-darken-4">Animal
+                                <i class="material-icons right">more_vert</i>
+                            </span>
+                            <p><a href="#">About this Animal</a></p>
+                        </div>
+                        <div class="card-reveal">
+                            <span class="card-title darkslategrey-text text-darken-4">Animal
+                                <i class="material-icons right">close</i>
+                            </span>
+                            <p>Hellooo, how are you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="form-modal" class="modal modal-fixed-footer">
+            <div class="row modal-content">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="First Name/Given Name" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input placeholder="Last Name/Surname" id="surname" type="text" class="validate">
+                            <label for="surname">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password_input" type="password" class="validate">
+                            <label for="password_input">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email_input" type="email" class="validate">
+                            <label for="email_input">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 center-align">
+                            <a class="waves-effect waves-light btn" id="submit-form-btn">Submit</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
